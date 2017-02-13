@@ -1,8 +1,8 @@
 <template>
     <div class="goods">
-        <a v-for="good in goods" @click="gogoods(good)" :goodsId="good.goodsId">
-            <img :src="good.iconUrl" :goodsId="good.goodsId" />
-            <h2 :goodsId="good.goodsId">{{good.name}}</h2>
+        <a v-for="good in goods" @click="gogoods(good)" >
+            <img :src="good.iconUrl" />
+            <h2>{{good.name}}</h2>
         </a>
     </div>
 </template>
